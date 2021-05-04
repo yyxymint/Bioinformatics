@@ -1,0 +1,28 @@
+donor랑 acceptor 
+무조건 exon에 포함되는 마지막 부분찍기
+
+
+
+라벨링하는거 no splicing이면 일단제외
+그리고나서 나머지중 제일 많은부분으로
+
+
+A5ss
+seq 정보
+1. JN_START : Positions where canonical exons end
+그위치 바로 후에 GT
+EXON|GT
+
+
+A3ss
+2. JN_END : Positions where canonical exons start
+그위치 바로 전에 AG
+AG|EXON
+
+519 : 1개 선택
+519+1 : 2개 선택
+519+388 : 389개 선택
+
++0 : 1개 선택
++388 : 387개 선택
+
